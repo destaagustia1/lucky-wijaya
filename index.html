@@ -1,0 +1,703 @@
+
+<!-- saved from url=(0059)file:///C:/Users/ASUS/Documents/Kei%20Test/lucky.html#story -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>```html
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Lucky Wijaya Suwandi</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #03070d;
+    color: #f5f8ff;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* BACKGROUND */
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: #075985;
+    filter: blur(180px);
+    opacity: .18;
+    top: -200px;
+    left: -200px;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 450px;
+    height: 450px;
+    background: #164e63;
+    filter: blur(180px);
+    opacity: .15;
+    bottom: -200px;
+    right: -150px;
+    z-index: -1;
+}
+
+/* STARS */
+
+.stars {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%,100% { opacity: .2; }
+    50% { opacity: 1; }
+}
+
+/* NAVBAR */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    background: rgba(3,7,13,.55);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(120,200,255,.08);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.logo span {
+    color: #67caff;
+}
+
+nav a {
+    color: #78899b;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 25px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #67caff;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 25px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.label {
+    color: #67caff;
+    font-size: 11px;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: clamp(70px, 15vw, 150px);
+    line-height: .9;
+    letter-spacing: -5px;
+}
+
+.hero h1 span {
+    color: #67caff;
+    text-shadow: 0 0 50px rgba(103,202,255,.35);
+}
+
+.hero p {
+    color: #8293a6;
+    max-width: 480px;
+    margin: 30px auto;
+    line-height: 1.8;
+}
+
+.scroll {
+    margin-top: 45px;
+    color: #526477;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+/* BUTTON */
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 50px;
+    background: #67caff;
+    color: #03101a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    transition: .3s;
+    box-shadow: 0 0 35px rgba(103,202,255,.15);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 45px rgba(103,202,255,.35);
+}
+
+/* SECTION */
+
+section {
+    padding: 110px 7%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title small {
+    color: #67caff;
+    letter-spacing: 4px;
+    font-size: 10px;
+}
+
+.title h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.title p {
+    color: #718294;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* PHOTO */
+
+.photo {
+    width: 100%;
+    max-width: 650px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 1px solid rgba(103,202,255,.12);
+    box-shadow: 0 30px 80px rgba(0,0,0,.4);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .7s;
+}
+
+.photo:hover img {
+    transform: scale(1.05);
+}
+
+/* MESSAGE */
+
+.message {
+    max-width: 700px;
+    margin: 50px auto 0;
+    padding: 40px;
+    border: 1px solid rgba(103,202,255,.12);
+    border-radius: 20px;
+    background: rgba(255,255,255,.025);
+    backdrop-filter: blur(15px);
+}
+
+.message p {
+    color: #9aa9b9;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+.message .hello {
+    color: #67caff;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-style: italic;
+}
+
+/* REASONS */
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+.card {
+    padding: 30px 20px;
+    min-height: 180px;
+    border: 1px solid rgba(103,202,255,.1);
+    border-radius: 18px;
+    background: rgba(255,255,255,.025);
+    transition: .4s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(103,202,255,.3);
+    box-shadow: 0 20px 50px rgba(0,0,0,.3);
+}
+
+.card number {
+    color: #67caff;
+    font-size: 12px;
+}
+
+.card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin: 15px 0 8px;
+}
+
+.card p {
+    color: #718294;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* LOVE LETTER */
+
+.letter {
+    max-width: 720px;
+    margin: auto;
+    padding: 45px;
+    border-radius: 5px 25px 5px 25px;
+    background: linear-gradient(
+        145deg,
+        rgba(103,202,255,.06),
+        rgba(255,255,255,.015)
+    );
+    border: 1px solid rgba(103,202,255,.15);
+}
+
+.letter p {
+    color: #a4b1bf;
+    line-height: 2;
+    margin-bottom: 20px;
+}
+
+.signature {
+    color: #67caff !important;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 24px;
+}
+
+/* FINAL */
+
+.final {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.final h2 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(50px,10vw,100px);
+    line-height: 1;
+}
+
+.final h2 span {
+    color: #67caff;
+}
+
+.final p {
+    color: #718294;
+    margin-top: 25px;
+}
+
+/* MUSIC BUTTON */
+
+.music {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid rgba(103,202,255,.3);
+    background: rgba(3,7,13,.8);
+    color: #67caff;
+    cursor: pointer;
+    z-index: 20;
+    font-size: 18px;
+    backdrop-filter: blur(10px);
+    transition: .3s;
+}
+
+.music:hover {
+    box-shadow: 0 0 30px rgba(103,202,255,.25);
+    transform: scale(1.05);
+}
+
+.music.playing {
+    box-shadow: 0 0 0 7px rgba(103,202,255,.06),
+                0 0 30px rgba(103,202,255,.3);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px;
+    color: #3e4d5c;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px) {
+
+    nav {
+        padding: 18px 20px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    section {
+        padding: 85px 22px;
+    }
+
+    .photo {
+        height: 400px;
+    }
+
+    .reasons {
+        grid-template-columns: 1fr;
+    }
+
+    .message,
+    .letter {
+        padding: 28px;
+    }
+}
+</style>
+
+
+
+
+<!-- BINTANG -->
+<div class="stars" id="stars"><div class="star" style="left: 23.0818%; top: 33.7766%; animation-delay: 1.73603s; opacity: 0.728526;"></div><div class="star" style="left: 34.0542%; top: 40.5382%; animation-delay: 1.64954s; opacity: 0.050285;"></div><div class="star" style="left: 18.8061%; top: 95.3515%; animation-delay: 2.7091s; opacity: 0.925603;"></div><div class="star" style="left: 0.515553%; top: 45.4248%; animation-delay: 2.03619s; opacity: 0.180941;"></div><div class="star" style="left: 50.6862%; top: 5.85777%; animation-delay: 0.631132s; opacity: 0.783249;"></div><div class="star" style="left: 41.2477%; top: 84.6702%; animation-delay: 0.350433s; opacity: 0.961236;"></div><div class="star" style="left: 59.4722%; top: 57.7087%; animation-delay: 0.0385142s; opacity: 0.58932;"></div><div class="star" style="left: 12.1884%; top: 14.3224%; animation-delay: 1.47421s; opacity: 0.960331;"></div><div class="star" style="left: 36.4283%; top: 87.9446%; animation-delay: 2.87836s; opacity: 0.740111;"></div><div class="star" style="left: 46.1776%; top: 66.8372%; animation-delay: 2.63209s; opacity: 0.842591;"></div><div class="star" style="left: 7.92313%; top: 99.871%; animation-delay: 1.35277s; opacity: 0.524395;"></div><div class="star" style="left: 41.2997%; top: 99.816%; animation-delay: 0.152764s; opacity: 0.424543;"></div><div class="star" style="left: 49.4929%; top: 71.9455%; animation-delay: 0.887944s; opacity: 0.27554;"></div><div class="star" style="left: 67.6222%; top: 11.6641%; animation-delay: 0.736591s; opacity: 0.734136;"></div><div class="star" style="left: 87.1367%; top: 43.0824%; animation-delay: 0.37017s; opacity: 0.985876;"></div><div class="star" style="left: 18.6487%; top: 27.9889%; animation-delay: 2.72662s; opacity: 0.319388;"></div><div class="star" style="left: 8.48282%; top: 49.3596%; animation-delay: 0.574026s; opacity: 0.277484;"></div><div class="star" style="left: 68.9494%; top: 48.7037%; animation-delay: 2.00193s; opacity: 0.855432;"></div><div class="star" style="left: 43.9229%; top: 5.04825%; animation-delay: 0.180198s; opacity: 0.0879887;"></div><div class="star" style="left: 61.8136%; top: 53.4126%; animation-delay: 2.27692s; opacity: 0.736012;"></div><div class="star" style="left: 16.7501%; top: 75.8226%; animation-delay: 1.07795s; opacity: 0.167268;"></div><div class="star" style="left: 25.4105%; top: 77.2628%; animation-delay: 0.606487s; opacity: 0.323733;"></div><div class="star" style="left: 40.3542%; top: 28.8387%; animation-delay: 1.44461s; opacity: 0.857201;"></div><div class="star" style="left: 50.095%; top: 45.6601%; animation-delay: 0.531841s; opacity: 0.0356224;"></div><div class="star" style="left: 79.1664%; top: 72.4274%; animation-delay: 1.09737s; opacity: 0.98747;"></div><div class="star" style="left: 73.2769%; top: 78.7555%; animation-delay: 2.24135s; opacity: 0.978578;"></div><div class="star" style="left: 60.6605%; top: 67.2346%; animation-delay: 1.29197s; opacity: 0.0548566;"></div><div class="star" style="left: 21.1242%; top: 21.5138%; animation-delay: 1.11664s; opacity: 0.316499;"></div><div class="star" style="left: 54.5421%; top: 47.2266%; animation-delay: 0.379203s; opacity: 0.0819067;"></div><div class="star" style="left: 40.531%; top: 41.5493%; animation-delay: 1.63981s; opacity: 0.733497;"></div><div class="star" style="left: 79.629%; top: 90.0452%; animation-delay: 1.42438s; opacity: 0.707459;"></div><div class="star" style="left: 91.4646%; top: 78.0681%; animation-delay: 1.396s; opacity: 0.435757;"></div><div class="star" style="left: 71.0636%; top: 53.3969%; animation-delay: 2.66158s; opacity: 0.590014;"></div><div class="star" style="left: 3.71259%; top: 28.6088%; animation-delay: 1.14968s; opacity: 0.871806;"></div><div class="star" style="left: 77.7863%; top: 87.956%; animation-delay: 0.124321s; opacity: 0.32031;"></div><div class="star" style="left: 62.3343%; top: 67.1541%; animation-delay: 0.480181s; opacity: 0.279053;"></div><div class="star" style="left: 63.3189%; top: 96.4663%; animation-delay: 1.33335s; opacity: 0.215036;"></div><div class="star" style="left: 89.8615%; top: 43.9068%; animation-delay: 2.98089s; opacity: 0.349216;"></div><div class="star" style="left: 80.1764%; top: 10.6116%; animation-delay: 2.99376s; opacity: 0.326594;"></div><div class="star" style="left: 47.0382%; top: 88.2557%; animation-delay: 2.17499s; opacity: 0.796398;"></div><div class="star" style="left: 82.0494%; top: 59.5544%; animation-delay: 2.72651s; opacity: 0.383437;"></div><div class="star" style="left: 65.1321%; top: 9.65209%; animation-delay: 0.75331s; opacity: 0.462638;"></div><div class="star" style="left: 66.7718%; top: 48.5242%; animation-delay: 2.66325s; opacity: 0.18842;"></div><div class="star" style="left: 14.2638%; top: 21.2962%; animation-delay: 1.69423s; opacity: 0.568315;"></div><div class="star" style="left: 69.8174%; top: 74.6708%; animation-delay: 1.25911s; opacity: 0.982325;"></div><div class="star" style="left: 64.3743%; top: 63.0399%; animation-delay: 1.92192s; opacity: 0.178115;"></div><div class="star" style="left: 68.0502%; top: 21.5607%; animation-delay: 2.4349s; opacity: 0.704196;"></div><div class="star" style="left: 3.05061%; top: 63.8795%; animation-delay: 1.52247s; opacity: 0.718515;"></div><div class="star" style="left: 28.5191%; top: 31.3376%; animation-delay: 1.86486s; opacity: 0.697314;"></div><div class="star" style="left: 44.8024%; top: 50.2347%; animation-delay: 2.83164s; opacity: 0.455812;"></div><div class="star" style="left: 38.5649%; top: 90.0657%; animation-delay: 1.91057s; opacity: 0.870164;"></div><div class="star" style="left: 40.5975%; top: 88.6035%; animation-delay: 2.76699s; opacity: 0.380369;"></div><div class="star" style="left: 67.9062%; top: 43.0112%; animation-delay: 2.63829s; opacity: 0.842375;"></div><div class="star" style="left: 90.6289%; top: 23.4636%; animation-delay: 0.636711s; opacity: 0.44459;"></div><div class="star" style="left: 86.4911%; top: 46.7268%; animation-delay: 2.11278s; opacity: 0.691316;"></div><div class="star" style="left: 42.7902%; top: 89.8107%; animation-delay: 0.926974s; opacity: 0.34623;"></div><div class="star" style="left: 36.8108%; top: 67.3252%; animation-delay: 1.73713s; opacity: 0.814518;"></div><div class="star" style="left: 98.2674%; top: 37.3795%; animation-delay: 1.40419s; opacity: 0.230916;"></div><div class="star" style="left: 87.4047%; top: 4.67606%; animation-delay: 0.907276s; opacity: 0.601254;"></div><div class="star" style="left: 44.1353%; top: 73.9109%; animation-delay: 1.73907s; opacity: 0.663582;"></div><div class="star" style="left: 89.8363%; top: 0.195481%; animation-delay: 0.269882s; opacity: 0.868411;"></div><div class="star" style="left: 96.8815%; top: 52.4655%; animation-delay: 2.32533s; opacity: 0.748259;"></div><div class="star" style="left: 43.5459%; top: 93.4507%; animation-delay: 1.6855s; opacity: 0.22298;"></div><div class="star" style="left: 49.6552%; top: 23.4182%; animation-delay: 2.3837s; opacity: 0.645963;"></div><div class="star" style="left: 56.0296%; top: 53.864%; animation-delay: 1.43865s; opacity: 0.736226;"></div><div class="star" style="left: 85.5033%; top: 88.7115%; animation-delay: 2.18297s; opacity: 0.310498;"></div><div class="star" style="left: 36.5062%; top: 58.5545%; animation-delay: 2.42551s; opacity: 0.635334;"></div><div class="star" style="left: 61.9306%; top: 90.7604%; animation-delay: 2.26011s; opacity: 0.668753;"></div><div class="star" style="left: 72.9869%; top: 56.6124%; animation-delay: 2.76854s; opacity: 0.614332;"></div><div class="star" style="left: 6.11667%; top: 78.2322%; animation-delay: 2.44365s; opacity: 0.913319;"></div><div class="star" style="left: 71.9328%; top: 75.9199%; animation-delay: 1.72703s; opacity: 0.491526;"></div><div class="star" style="left: 12.5947%; top: 67.5504%; animation-delay: 2.60657s; opacity: 0.750901;"></div><div class="star" style="left: 80.8694%; top: 17.165%; animation-delay: 1.20962s; opacity: 0.64594;"></div><div class="star" style="left: 84.1206%; top: 34.5788%; animation-delay: 1.5511s; opacity: 0.0124336;"></div><div class="star" style="left: 56.3454%; top: 87.8108%; animation-delay: 2.97954s; opacity: 0.384221;"></div><div class="star" style="left: 21.8225%; top: 5.85757%; animation-delay: 1.50794s; opacity: 0.834636;"></div><div class="star" style="left: 20.1144%; top: 19.9971%; animation-delay: 0.17585s; opacity: 0.0119512;"></div><div class="star" style="left: 47.3697%; top: 85.2177%; animation-delay: 1.38278s; opacity: 0.496125;"></div><div class="star" style="left: 17.9313%; top: 64.6003%; animation-delay: 1.51043s; opacity: 0.452236;"></div><div class="star" style="left: 24.6475%; top: 79.8783%; animation-delay: 2.28333s; opacity: 0.44291;"></div><div class="star" style="left: 5.30021%; top: 2.83689%; animation-delay: 2.45917s; opacity: 0.1305;"></div><div class="star" style="left: 64.0711%; top: 14.9896%; animation-delay: 2.17537s; opacity: 0.239341;"></div><div class="star" style="left: 30.0666%; top: 41.2309%; animation-delay: 2.07852s; opacity: 0.56999;"></div><div class="star" style="left: 4.29575%; top: 39.2382%; animation-delay: 0.734403s; opacity: 0.221434;"></div><div class="star" style="left: 85.3109%; top: 35.3335%; animation-delay: 0.159038s; opacity: 0.631692;"></div><div class="star" style="left: 43.9268%; top: 60.8768%; animation-delay: 2.83326s; opacity: 0.538945;"></div><div class="star" style="left: 57.9403%; top: 25.2439%; animation-delay: 0.508293s; opacity: 0.26695;"></div><div class="star" style="left: 7.85206%; top: 23.2378%; animation-delay: 2.32009s; opacity: 0.592778;"></div><div class="star" style="left: 49.8642%; top: 9.40423%; animation-delay: 2.08883s; opacity: 0.475112;"></div><div class="star" style="left: 89.6232%; top: 71.1786%; animation-delay: 0.811557s; opacity: 0.387786;"></div><div class="star" style="left: 72.7155%; top: 17.8676%; animation-delay: 0.918606s; opacity: 0.775801;"></div><div class="star" style="left: 77.3648%; top: 23.978%; animation-delay: 2.35398s; opacity: 0.470234;"></div><div class="star" style="left: 16.0065%; top: 94.5528%; animation-delay: 0.197955s; opacity: 0.37035;"></div><div class="star" style="left: 6.64606%; top: 43.9533%; animation-delay: 2.28124s; opacity: 0.496768;"></div><div class="star" style="left: 72.9732%; top: 34.1093%; animation-delay: 1.45493s; opacity: 0.476556;"></div><div class="star" style="left: 32.4797%; top: 31.021%; animation-delay: 0.225013s; opacity: 0.602038;"></div><div class="star" style="left: 9.56272%; top: 85.0356%; animation-delay: 2.90499s; opacity: 0.010105;"></div><div class="star" style="left: 14.2579%; top: 17.7366%; animation-delay: 2.84428s; opacity: 0.319444;"></div><div class="star" style="left: 15.1266%; top: 27.3266%; animation-delay: 0.290454s; opacity: 0.554878;"></div><div class="star" style="left: 27.8095%; top: 17.1284%; animation-delay: 0.094836s; opacity: 0.243886;"></div></div>
+
+
+<!-- NAVBAR -->
+
+<nav>
+    <div class="logo">
+        Tata
+    </div>
+
+    <div>
+        <a href="file:///C:/Users/ASUS/Documents/Kei%20Test/lucky.html#story">OUR STORY</a>
+        <a href="file:///C:/Users/ASUS/Documents/Kei%20Test/lucky.html#letter">LETTER</a>
+    </div>
+</nav>
+
+
+<!-- MUSIC -->
+
+<button class="music" id="musicBtn">♪</button>
+
+<audio id="music" loop="">
+    <source src="audio/Slide Away.mpeg">
+</audio>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="label">
+            A little something from Tata
+        </div>
+
+        <h1>
+            For <span>Lucky.</span>
+        </h1>
+
+        <p>
+            Dari Tata, untuk seseorang yang berhasil
+            menjadi bagian paling spesial dari hari-hariku.
+        </p>
+
+        <a href="file:///C:/Users/ASUS/Documents/Kei%20Test/lucky.html#story" class="btn">
+            OPEN OUR STORY
+        </a>
+
+        <div class="scroll">
+        
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STORY -->
+
+<section id="story">
+
+    <div class="title">
+        <small>OUR STORY</small>
+
+        <h2>
+            Lucky Wijaya
+        </h2>
+
+        <p>
+            Ada beberapa hal yang ingin Tata bilang.
+        </p>
+    </div>
+
+
+    <!-- FOTO -->
+    <!-- Ganti foto.jpg dengan foto kalian -->
+
+    <div class="photo">
+       <img src="img/lucky.jpeg">
+    </div>
+
+
+    <div class="message">
+
+        <p class="hello">
+            Hi, Lucky.
+        </p>
+
+        <p>
+            Mungkin tata ngga selalu bilang secara langsung,
+            tapi tata bersyukur banget bisa kenal dan punya kamu
+            di hidup yang satu kali ini.
+        </p>
+
+        <p>
+            Terima kasih sudah hadir, sudah bertahan,
+            sudah mau dengerin cerita-cerita tata,
+            dan sudah menjadi seseorang yang selalu tata tunggu.
+        </p>
+
+        <p>
+            Dari sekian banyak orang yang bisa tata temui,
+            tata senang semesta mempertemukan kita.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- REASONS -->
+
+
+
+<!-- LETTER -->
+
+<section id="letter">
+
+    <div class="title">
+
+        <small>A LETTER FOR YOU</small>
+
+        <h2>
+            From Tata, with love.
+        </h2>
+
+    </div>
+
+
+    <div class="letter">
+
+        <p>
+            Lucky,
+        </p>
+
+        <p>
+            Kalau suatu hari kamu lupa seberapa berarti
+            kamu buat tata, semoga kamu bisa kembali ke
+            halaman ini dan baca semuanya lagi.
+        </p>
+
+        <p>
+            Tata mungkin bukan orang yang selalu bisa
+            mengungkapkan semuanya dengan sempurna.
+            Tapi satu hal yang aku tahu,
+            tata senang punya kamu.
+        </p>
+
+        <p>
+            Terima kasih untuk semua waktu,
+            perhatian, cerita, tawa, dan hal-hal kecil
+            yang kita lewati bareng.
+        </p>
+
+        <p>
+            Semoga sejauh apa pun nanti perjalanan kita,
+            kita tetap jadi dua orang yang memilih
+            untuk saling menjaga.
+        </p>
+
+        <p>
+            I love you, Lucky.
+        </p>
+
+        <p class="signature">
+            — Tata 2026
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section class="final">
+
+    <div>
+
+        <div class="label">
+            ONE LAST THING
+        </div>
+
+        <h2>
+            Always<br>
+            <span>you, Lucky.</span>
+        </h2>
+
+        <p>
+            With love, from Tata.
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+    MADE WITH LOVE — TATA 2026
+</footer>
+
+
+<script>
+
+/* ==========================
+   GENERATE BINTANG
+========================== */
+
+const stars = document.getElementById("stars");
+
+for (let i = 0; i < 100; i++) {
+
+    const star = document.createElement("div");
+
+    star.className = "star";
+
+    star.style.left = Math.random() * 100 + "%";
+    star.style.top = Math.random() * 100 + "%";
+
+    star.style.animationDelay =
+        Math.random() * 3 + "s";
+
+    star.style.opacity =
+        Math.random();
+
+    stars.appendChild(star);
+}
+
+
+/* ==========================
+   MUSIC
+========================== */
+
+const music = document.getElementById("music");
+const musicBtn = document.getElementById("musicBtn");
+
+musicBtn.addEventListener("click", function () {
+
+    if (music.paused) {
+
+        music.play();
+
+        musicBtn.innerHTML = "❚❚";
+
+        musicBtn.classList.add("playing");
+
+    } else {
+
+        music.pause();
+
+        musicBtn.innerHTML = "♪";
+
+        musicBtn.classList.remove("playing");
+
+    }
+
+});
+
+</script>
+
+
+</body></html>
